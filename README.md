@@ -1,4 +1,4 @@
-![Alt text](icons/project-img.png)
+![Alt text](project-img.png)
 
 
 Just task HTML/CSS (flexbox)
