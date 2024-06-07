@@ -1,1 +1,1 @@
-![Alt text](images/logo.png)
+![Alt text](icons/icon1.png)
