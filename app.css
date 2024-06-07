@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    --text-color-main: #016ff9;
+    --text-color-secondary: darkgray;
+    --background-color-main: white;
+}
+
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.panel .pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.panel .pricing-img {
+    width: fit-content;
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.pricing-header {
+    font-size: 16px;
+    color: #888;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pricing-features {
+    margin: 50px 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+.pricing-features-item {
+    font-size: 14px;
+    color: var(--text-color-main);
+    border-top: 1px solid #e1f1ff;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.pricing-price {
+    font-size: 35px;
+    padding-top: 30px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-color-main);
+    margin-bottom: 20px;
+    border-top: 1px solid #e1f1ff;
+    width: 100%;
+}
+
+.panel .pricing-button {
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    color: var(--text-color-main);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #e1f1ff;
+    transition: background-color 200ms ease-in-out;
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .panel .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
